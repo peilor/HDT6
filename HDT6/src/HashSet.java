@@ -20,6 +20,7 @@ public class HashSet implements Set{
      *
      * @param wordObject
      */
+    @Override
     public void add(Persona persona) {
         HashTable.put(persona.getNombre(),persona);
          }

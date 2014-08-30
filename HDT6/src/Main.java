@@ -12,25 +12,16 @@ public class Main {
     private static boolean desWeb;
     private static boolean desCel;
     public static void main(String[] args) {
-        boolean cont=true;
-        while(cont){
-            int op=Integer.parseInt(JOptionPane.showInputDialog("¿Que tipo de implementación de Set desea?"
-                    + "\n1)HashSet"
-                    + "\n2)TreeSet"
-                    + "\n3)LinkedHashSet"));
-            if(op==1){
-                tipo=1;
-                cont=false;
-            }else if(op==2){
-                tipo=2;
-                cont=false;
-            }else if(op==3){
-                tipo=3;
-                cont=false;
-            }else{
-                JOptionPane.showMessageDialog(null, "Usted no ha ingresado una opcion valida");
-                }
-        }
+        String[] sets = {"HashSet", "TreeSet","LinkedHashSet"};
+        int tipo=JOptionPane.showOptionDialog(
+                    null
+                    , "¿Que implementacion de guardado desea?"
+                    , "Implementacion"
+                    , JOptionPane.YES_NO_OPTION
+                    , JOptionPane.PLAIN_MESSAGE
+                    , null
+                    , sets
+                    , "HashSet");
         SetFactory sFactory = new SetFactory();
         Set datos = sFactory.getSet(tipo);
         String[] opciones = {"Si", "No"};
