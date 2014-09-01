@@ -5,6 +5,7 @@
  * 
  */
 import javax.swing.JOptionPane;
+import java.util.Set;
 
 public class Main {
     private static int tipo;
@@ -22,7 +23,7 @@ public class Main {
                     , null
                     , sets
                     , "HashSet");
-        SetFactory sFactory = new SetFactory();
+        SetFactory<Persona> sFactory = new SetFactory<>();
         Set datos = sFactory.getSet(tipo);
         String[] opciones = {"Si", "No"};
         boolean bandera=true;        
