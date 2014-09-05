@@ -163,7 +163,7 @@ public class Main<E> {
             boolean subconj1= conjunto5.containsAll(conjuntoDesJava);
             //System.out.println("Es conjDesJava subconjunto de conjDesWeb? "+subconj1);
             if (subconj1==true){
-                System.out.println("5. Es desarrolladores Java subconjunto de desarrolladores Web: SÍ");
+                System.out.println("5. Es desarrolladores Java subconjunto de desarrolladores Web: SI");
             }
             else 
                 System.out.println("5. Es desarrolladores Java subconjunto de desarrolladores Web?: NO");
