@@ -8,17 +8,13 @@ import javax.swing.JOptionPane;
 import java.util.*;
 
 public class Main<E> {
-    //private static int tipo;
-    //Tipo no se usa.
-    
+      //Estos son los atributos para las personas, ya sea desarrollador de Java, Web o de Celulares
       private static boolean desJava;
       private static boolean desWeb;
       private static boolean desCel;
 
     public static void main(String[] args) {
-
-//Arreglado para retornar valor entero para escoger implementación. Antes retornaba Y/N. 
-                
+        //Se le muestra el menu de implementaciones para que el usuario indica el que desee
         int tipoMensaje = JOptionPane.QUESTION_MESSAGE;
         String[] tipoImplementacion = {"HashSet", "TreeSet","LinkedHashSet"};
         int tipo=JOptionPane.showOptionDialog(null
@@ -46,6 +42,7 @@ public class Main<E> {
               
         System.out.println("Tipo de implementación: "+tipo);
         
+        //Se le pregunta al usuario si es desarrollador de Java, Web o de Celulares
         String[] opciones = {"Si", "No"};
         boolean bandera=true;        
         while (bandera) {
@@ -219,7 +216,7 @@ public class Main<E> {
             }
             //Inciso7: El conjunto del inciso anterior en orden ascendente.
                         
-            Arrays.sort(arregloMax);
+            //Arrays.sort(arregloMax);
             
             System.out.println("7. Ahora el conjunto ordenado de forma ascendente: "
                     +Arrays.toString(arregloMax));
