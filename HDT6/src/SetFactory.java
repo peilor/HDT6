@@ -14,8 +14,8 @@ import java.util.TreeSet;
 public class SetFactory<E>{
     /**
      * 
-     * @param Se le ingresa el tipo de Set que se desea en un número entre 0 y 1
-     * @return El tipo de Set que se solicitó
+     *El tipo de Set que se solicitó
+     * @param <E>
      */
     
     public Set<E> getSet(int tipo){

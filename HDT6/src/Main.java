@@ -215,12 +215,13 @@ public class Main<E> {
                                    
             }
             //Inciso7: El conjunto del inciso anterior en orden ascendente.
-                        
-            //Arrays.sort(arregloMax);
+            if (arregloMax!= null){
+            Arrays.sort(arregloMax);
             
             System.out.println("7. Ahora el conjunto ordenado de forma ascendente: "
                     +Arrays.toString(arregloMax));
-             
+            }
+                         
             respuesta = JOptionPane.showOptionDialog(
                     null
                     , "¿Desea ingresar otro usuario?"
