@@ -172,7 +172,7 @@ public class Main<E> {
             
             int maximo = Math.max(conjuntoDesJava.size(),
                     Math.max(conjuntoDesWeb.size(),conjuntoDesCel.size()));
-            //El conjunto que más elementos tenga se guardará para responder el inciso 7.
+            //El conjunto que más elementos tenga se guardará en arregloMax para responder el inciso 7.
             
             String [] arregloMax;
                                   
@@ -218,8 +218,7 @@ public class Main<E> {
                                    
             }
             //Inciso7: El conjunto del inciso anterior en orden ascendente.
-            
-            
+                        
             Arrays.sort(arregloMax);
             
             System.out.println("7. Ahora el conjunto ordenado de forma ascendente: "
