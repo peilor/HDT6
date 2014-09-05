@@ -214,7 +214,7 @@ public class Main<E> {
                 arregloMax = null;
                                    
             }
-            //Inciso7: El conjunto del inciso anterior en orden ascendente.
+            //Inciso7: El conjunto del inciso anterior en orden ascendente. 
             if (arregloMax!= null){
             Arrays.sort(arregloMax);
             
