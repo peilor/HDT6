@@ -163,7 +163,7 @@ public class Main<E> {
             boolean subconj1= conjunto5.containsAll(conjuntoDesJava);
             //System.out.println("Es conjDesJava subconjunto de conjDesWeb? "+subconj1);
             if (subconj1==true){
-                System.out.println("5. Es desarrolladores Java subconjunto de desarrolladores Web: SI");
+                System.out.println("5. Es desarrolladores Java subconjunto de desarrolladores Web: SÍ");
             }
             else 
                 System.out.println("5. Es desarrolladores Java subconjunto de desarrolladores Web?: NO");
@@ -172,7 +172,7 @@ public class Main<E> {
             
             int maximo = Math.max(conjuntoDesJava.size(),
                     Math.max(conjuntoDesWeb.size(),conjuntoDesCel.size()));
-            //El conjunto que más elementos tenga se guardará en arregloMax para responder el inciso 7.
+            //El conjunto que más elementos tenga se guardará para responder el inciso 7.
             
             String [] arregloMax;
                                   
